@@ -1,0 +1,23 @@
+{
+  "name": "ahmed-furkhan-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Ahmed Furkhan — AI/ML Engineer & Data Scientist. Built with vanilla HTML5, CSS3, and ES6 modules. Features an interactive hex-grid project showcase, typing animation, skill filter, and an AI chatbot.",
+  "type": "module",
+  "author": "Ahmed Furkhan <ahmedfurkhan98@gmail.com> (https://ahmedfurkhan.vercel.app/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Ahmedfurkhan/AhmedHomepage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahmedfurkhan/AhmedHome"
+  },
+  "scripts": {
+    "lint": "eslint assets/js/app.js assets/js/hexGrid.js assets/js/main.js assets/js/util.js",
+    "format": "prettier --write \"**/*.{html,css,js}\" --ignore-path .prettierignore"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^8.57.1",
+    "globals": "^17.6.0",
+    "prettier": "^3.3.2"
+  }
+}

@@ -1,0 +1,421 @@
+/* ================================================================
+   custom.css  —  Ahmed Furkhan Portfolio
+   Supplements assets/css/main.css (Massively theme).
+   No !important declarations anywhere in this file.
+================================================================ */
+
+/* ── Back-to-top button ─────────────────────────────────────── */
+#backToTop {
+  position: fixed;
+  bottom: 90px;
+  right: 22px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #18bfef;
+  color: #ffffff;
+  border: none;
+  font-size: 1.3rem;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.35s ease,
+    transform 0.2s ease;
+  z-index: 2000;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#backToTop:hover {
+  transform: translateY(-3px);
+  background-color: #0da8d4;
+}
+
+/* ── Chatbot ────────────────────────────────────────────────── */
+.chatbot-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 2000;
+  border: 2px solid #18bfef;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  object-fit: cover;
+}
+
+.chatbot-icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 16px rgba(24, 191, 239, 0.6);
+}
+
+.chat-iframe {
+  position: fixed;
+  bottom: 92px;
+  right: 22px;
+  width: 380px;
+  height: 540px;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+  z-index: 1999;
+}
+
+/* ── Hero stat cards ────────────────────────────────────────── */
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 2em 0 1.5em;
+}
+
+.stat-card {
+  background: rgba(24, 191, 239, 0.08);
+  border: 1px solid rgba(24, 191, 239, 0.3);
+  border-radius: 12px;
+  padding: 16px 22px;
+  text-align: center;
+  min-width: 130px;
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease;
+}
+
+.stat-card:hover {
+  background: rgba(24, 191, 239, 0.18);
+  transform: translateY(-3px);
+}
+
+.stat-card .stat-number {
+  display: block;
+  font-size: 1.9em;
+  font-weight: 700;
+  color: #18bfef;
+  line-height: 1.1;
+}
+
+.stat-card .stat-label {
+  display: block;
+  font-size: 0.75em;
+  opacity: 0.75;
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── Skills filter bar ──────────────────────────────────────── */
+.skill-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 2.5em;
+}
+
+.skill-filter-btn {
+  background: transparent;
+  border: 1px solid #18bfef;
+  color: #18bfef;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.82em;
+  letter-spacing: 0.05em;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.skill-filter-btn:hover,
+.skill-filter-btn.active {
+  background: #18bfef;
+  color: #ffffff;
+}
+
+/* ── Skill icon grid ────────────────────────────────────────── */
+.skill-section {
+  margin-bottom: 2.5em;
+}
+
+.skill-section h3 {
+  margin-bottom: 1em;
+  font-size: 1.35em;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.tech-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tech-logo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(24, 191, 239, 0.35);
+}
+
+/* ── Hex grid canvas wrapper ────────────────────────────────── */
+.hex-grid-wrapper {
+  width: 100%;
+  margin: 1.5em 0 2em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hex-grid-wrapper canvas {
+  display: block;
+  width: 100%;
+}
+
+.hex-grid-hint {
+  text-align: center;
+  font-size: 0.85em;
+  opacity: 0.65;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+}
+
+/* ── Typing cursor ──────────────────────────────────────────── */
+#typingText::after {
+  content: "|";
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ── Profile image (round) ──────────────────────────────────── */
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  box-shadow: 0 0 0 4px #18bfef;
+}
+
+/* ── Work experience timeline ───────────────────────────────── */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, #18bfef, rgba(24, 191, 239, 0.1));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.8em;
+  padding-bottom: 2.4em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #18bfef;
+  box-shadow: 0 0 0 3px rgba(24, 191, 239, 0.25);
+}
+
+.timeline-item h2 {
+  margin-bottom: 0.2em;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0.3em 0 0.9em;
+}
+
+.timeline-meta span {
+  font-size: 0.85em;
+  opacity: 0.65;
+}
+
+.timeline-meta .meta-company {
+  color: #18bfef;
+  opacity: 1;
+}
+.timeline-meta .meta-date {
+  font-style: italic;
+}
+.timeline-meta .meta-loc {
+}
+
+/* ── Education cards ────────────────────────────────────────── */
+.edu-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #18bfef;
+  border-radius: 8px;
+  padding: 1.4em 1.6em;
+  margin-bottom: 1.6em;
+  transition: background 0.2s ease;
+}
+
+.edu-card:hover {
+  background: rgba(24, 191, 239, 0.05);
+}
+
+.edu-card h3 {
+  margin-bottom: 0.2em;
+}
+
+.edu-card .edu-degree {
+  color: #18bfef;
+  font-weight: 600;
+  font-size: 0.95em;
+  margin-bottom: 0.3em;
+}
+
+.edu-card .edu-meta {
+  font-size: 0.82em;
+  opacity: 0.6;
+}
+
+/* ── Certification badge grid ───────────────────────────────── */
+.cert-issuer-badge {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+}
+
+.badge-microsoft {
+  background: rgba(0, 120, 212, 0.2);
+  color: #50aef5;
+  border: 1px solid rgba(0, 120, 212, 0.4);
+}
+.badge-oracle {
+  background: rgba(200, 40, 40, 0.2);
+  color: #f07070;
+  border: 1px solid rgba(200, 40, 40, 0.4);
+}
+.badge-google {
+  background: rgba(66, 133, 244, 0.2);
+  color: #80b0f8;
+  border: 1px solid rgba(66, 133, 244, 0.4);
+}
+.badge-hackerrank {
+  background: rgba(0, 200, 100, 0.2);
+  color: #60e8a0;
+  border: 1px solid rgba(0, 200, 100, 0.4);
+}
+.badge-linkedin {
+  background: rgba(10, 102, 194, 0.2);
+  color: #70b0f0;
+  border: 1px solid rgba(10, 102, 194, 0.4);
+}
+
+/* ── Seeking badge on about page ────────────────────────────── */
+.seeking-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(24, 191, 239, 0.15),
+    rgba(123, 47, 247, 0.15)
+  );
+  border: 1px solid rgba(24, 191, 239, 0.4);
+  border-radius: 24px;
+  padding: 8px 20px;
+  font-size: 0.88em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0.6em auto 1.4em;
+  color: #18bfef;
+}
+
+/* ── Generated page banner ──────────────────────────────────── */
+.ai-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #18bfef, #7b2ff7);
+  color: #fff;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 1.2em;
+  text-transform: uppercase;
+}
+
+/* ── Responsive tweaks ──────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+  .chat-iframe {
+    width: calc(100vw - 24px);
+    right: 12px;
+    bottom: 86px;
+  }
+
+  .tech-logo {
+    width: 76px;
+    height: 76px;
+  }
+  .stats-row {
+    gap: 10px;
+  }
+  .stat-card {
+    min-width: 100px;
+    padding: 12px 14px;
+  }
+  .stat-card .stat-number {
+    font-size: 1.5em;
+  }
+  .timeline {
+    padding-left: 20px;
+  }
+  .timeline-item::before {
+    left: -24px;
+  }
+}
