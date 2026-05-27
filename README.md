@@ -5,7 +5,7 @@
 **Ahmed Furkhan**  
 MS Computer Science · Northeastern University (Khoury College)  
 📧 [ahmedfurkhan98@gmail.com](mailto:ahmedfurkhan98@gmail.com)  
-🔗 [linkedin.com/in/ahmedfurkhan](https://www.linkedin.com/in/ahmedfurkhan)  
+🔗 [linkedin.com/in/ahmedfurkhan](https://www.linkedin.com/in/ahmedfurkhan)
 
 ---
 
@@ -16,6 +16,8 @@ Khoury College of Computer Sciences, Northeastern University
 [Course Page](https://johnguerra.co/classes/webDevelopment_fall_2024/)
 
 ---
+
+Peer review suggestions added.
 
 ## Project Objective
 
@@ -36,15 +38,15 @@ An HTML5 Canvas honeycomb grid where each hexagonal tile displays a project scre
 
 ## Pages
 
-| File | URL | Description |
-|---|---|---|
-| `index.html` | `/` | About Me — bio, stats, featured projects |
-| `generic.html` | `/generic.html` | Education — Northeastern MS, VTU BE |
-| `work_experience.html` | `/work_experience.html` | Work Experience — timeline layout |
-| `elements.html` | `/elements.html` | Projects — interactive hex grid + cards |
-| `basic.html` | `/basic.html` | Skills — filterable tech icon grid |
-| `certify.html` | `/certify.html` | Certifications — Oracle, Microsoft, Google, HackerRank |
-| `generated.html` | `/generated.html` | AI-Generated Profile — fulfils rubric requirement |
+| File                   | URL                     | Description                                            |
+| ---------------------- | ----------------------- | ------------------------------------------------------ |
+| `index.html`           | `/`                     | About Me — bio, stats, featured projects               |
+| `generic.html`         | `/generic.html`         | Education — Northeastern MS, VTU BE                    |
+| `work_experience.html` | `/work_experience.html` | Work Experience — timeline layout                      |
+| `elements.html`        | `/elements.html`        | Projects — interactive hex grid + cards                |
+| `basic.html`           | `/basic.html`           | Skills — filterable tech icon grid                     |
+| `certify.html`         | `/certify.html`         | Certifications — Oracle, Microsoft, Google, HackerRank |
+| `generated.html`       | `/generated.html`       | AI-Generated Profile — fulfils rubric requirement      |
 
 ---
 
@@ -126,13 +128,13 @@ AhmedHome/
 
 ## GenAI Disclosure
 
-| Field | Details |
-|---|---|
-| **Models used** | Claude Sonnet (Anthropic) — `claude-sonnet-4-20250514` |
-| **Versions** | Claude Sonnet 4 (May 2025) |
-| **What was generated** | `generated.html` narrative bio; initial drafts of `hexGrid.js` class structure and `main.js` vanilla rewrites; structural HTML scaffolding for all pages |
-| **Prompts provided** | "Rewrite this jQuery-based main.js as a vanilla ES6 module with the same functionality — no jQuery allowed"; "Write an HTML5 Canvas-based flat-top hexagonal grid class in ES6 that displays project images and handles hover glow and click navigation"; "Write a third-person AI-generated narrative bio for Ahmed Furkhan based on his resume and project list" |
-| **Refinement** | All AI output was reviewed, tested in-browser, corrected for W3C compliance, formatted with Prettier, and linted with ESLint. The hex grid math, ARIA labels, alt text, and meta tags were manually verified or written. |
+| Field                  | Details                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Models used**        | Claude Sonnet (Anthropic) — `claude-sonnet-4-20250514`                                                                                                                                                                                                                                                                                                             |
+| **Versions**           | Claude Sonnet 4 (May 2025)                                                                                                                                                                                                                                                                                                                                         |
+| **What was generated** | `generated.html` narrative bio; initial drafts of `hexGrid.js` class structure and `main.js` vanilla rewrites; structural HTML scaffolding for all pages                                                                                                                                                                                                           |
+| **Prompts provided**   | "Rewrite this jQuery-based main.js as a vanilla ES6 module with the same functionality — no jQuery allowed"; "Write an HTML5 Canvas-based flat-top hexagonal grid class in ES6 that displays project images and handles hover glow and click navigation"; "Write a third-person AI-generated narrative bio for Ahmed Furkhan based on his resume and project list" |
+| **Refinement**         | All AI output was reviewed, tested in-browser, corrected for W3C compliance, formatted with Prettier, and linted with ESLint. The hex grid math, ARIA labels, alt text, and meta tags were manually verified or written.                                                                                                                                           |
 
 ---
 
