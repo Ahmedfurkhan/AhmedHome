@@ -190,7 +190,9 @@ html {
 body {
   background-color: #1e252d;
 }
-
+/* contains many !important declarations. 
+Try to minimize or remove !important where possible, 
+especially in your custom stylesheet. */
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {

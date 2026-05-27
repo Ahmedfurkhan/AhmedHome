@@ -17,8 +17,6 @@ Khoury College of Computer Sciences, Northeastern University
 
 ---
 
-Peer review suggestions added.
-
 ## Project Objective
 
 Build a personal homepage using **vanilla HTML5, CSS3, and ES6+ modules** — no jQuery, no component libraries. The site showcases my education, work experience, projects, skills, and certifications. A creative original component differentiates the page from other portfolios.
@@ -141,3 +139,8 @@ AhmedHome/
 ## License
 
 MIT © Ahmed Furkhan — see [LICENSE](LICENSE)
+
+## Peer Review Notes
+
+- Recommend adding a short public narrated demo video link to fully satisfy the rubric requirements.
+- Overall project structure, ES6 module organization, and GenAI disclosure are well implemented.
